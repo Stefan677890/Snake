@@ -1,6 +1,6 @@
 ﻿namespace Snake
 {
-    partial class Form1
+    partial class Board
     {
         /// <summary>
         ///  Required designer variable.
@@ -29,11 +29,25 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
+            Timer = new System.Windows.Forms.Timer(components);
+            SuspendLayout();
+            // 
+            // Timer
+            // 
+            Timer.Interval = 80;
+            // 
+            // Board
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Text = "Form1";
+            Name = "Board";
+            Text = "Board";
+            ResumeLayout(false);
         }
 
         #endregion
+
+        private System.Windows.Forms.Timer Timer;
     }
 }
