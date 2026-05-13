@@ -39,6 +39,7 @@
             // Timer
             // 
             Timer.Interval = 80;
+            Timer.Tick += Tick;
             // 
             // Start
             // 
@@ -98,6 +99,7 @@
             Controls.Add(button3);
             Controls.Add(Difficulty);
             Controls.Add(Start);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             MaximumSize = new Size(801, 601);
             MinimumSize = new Size(800, 600);
             Name = "Board";

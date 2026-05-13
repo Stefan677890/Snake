@@ -20,19 +20,24 @@ namespace Snake
         }
         private void button1_Click(object sender, EventArgs e)
         {
+            MessageBox.Show("The game is starting");
             Timer.Start();
-            MessageBox.Show("Start");
         }
 
         private void Difficulty_Click(object sender, EventArgs e)
         {
-
+            MessageBox.Show("Choose the difficulty");
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Program jest zamykany...");
+            MessageBox.Show("The program is being close...");
             Close();
+        }
+
+        private void Tick(object sender, EventArgs e)
+        {
+
         }
     }
 }
