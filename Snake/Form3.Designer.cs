@@ -44,7 +44,7 @@
             Normal.FlatAppearance.MouseOverBackColor = Color.Transparent;
             Normal.FlatStyle = FlatStyle.Flat;
             Normal.ForeColor = Color.Transparent;
-            Normal.Location = new Point(205, 185);
+            Normal.Location = new Point(205, 183);
             Normal.Name = "Normal";
             Normal.Size = new Size(371, 73);
             Normal.TabIndex = 1;

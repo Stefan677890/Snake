@@ -28,8 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
+            Timer = new System.Windows.Forms.Timer(components);
             SuspendLayout();
+            // 
+            // Timer
+            // 
+            Timer.Enabled = true;
+            Timer.Interval = 75;
+            Timer.Tick += Tick;
             // 
             // Form2
             // 
@@ -43,9 +51,14 @@
             MinimumSize = new Size(800, 600);
             Name = "Form2";
             Text = "Board";
+            Load += Form2_Load;
+            Paint += Form2_Paint;
+            KeyDown += Form2_KeyDown;
             ResumeLayout(false);
         }
 
         #endregion
+
+        private System.Windows.Forms.Timer Timer;
     }
 }

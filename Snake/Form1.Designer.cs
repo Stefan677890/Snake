@@ -28,18 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Board));
-            Timer = new System.Windows.Forms.Timer(components);
             Start = new Button();
             Difficulty = new Button();
             button3 = new Button();
             SuspendLayout();
-            // 
-            // Timer
-            // 
-            Timer.Interval = 80;
-            Timer.Tick += Tick;
             // 
             // Start
             // 
@@ -108,8 +101,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Timer Timer;
         private Button Start;
         private Button Difficulty;
         private Button button3;

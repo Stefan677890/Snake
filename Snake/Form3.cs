@@ -19,22 +19,34 @@ namespace Snake
 
         private void Normal_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("U clicked a button");
+            Form2.difficulty = 1;
+            Form2 gameForm = new Form2();
+            gameForm.Show();
+            this.Hide();
         }
 
         private void Hard_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("U clicked a button");
+            Form2.difficulty = 2;
+            Form2 gameForm = new Form2();
+            gameForm.Show();
+            this.Hide();
         }
 
         private void Extreme_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("U clicked a button");
+            Form2.difficulty = 3;
+            Form2 gameForm = new Form2();
+            gameForm.Show();
+            this.Hide();
         }
 
         private void Secret_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("U clicked a button");
+            Form2.difficulty = 4;
+            Form2 gameForm = new Form2();
+            gameForm.Show();
+            this.Hide();
         }
     }
 }

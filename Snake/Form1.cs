@@ -2,17 +2,6 @@ namespace Snake
 {
     public partial class Board : Form
     {
-        int PlayerScore = 0;
-
-        int playerX = 400;
-        int playerY = 400;
-
-        int PlayerSpeedX = 4;
-
-        int AppleX;
-        int AppleY;
-
-
         public Board()
         {
             InitializeComponent();
@@ -36,11 +25,6 @@ namespace Snake
         {
             MessageBox.Show("The program is being close...");
             Close();
-        }
-
-        private void Tick(object sender, EventArgs e)
-        {
-
         }
     }
 }
