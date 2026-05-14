@@ -16,5 +16,25 @@ namespace Snake
         {
             InitializeComponent();
         }
+
+        private void Normal_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("U clicked a button");
+        }
+
+        private void Hard_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("U clicked a button");
+        }
+
+        private void Extreme_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("U clicked a button");
+        }
+
+        private void Secret_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("U clicked a button");
+        }
     }
 }

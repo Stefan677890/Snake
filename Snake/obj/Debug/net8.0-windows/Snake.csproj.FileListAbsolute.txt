@@ -17,3 +17,6 @@ C:\Users\1ap\source\repos\Snake\Snake\obj\Debug\net8.0-windows\ref\Snake.dll
 C:\Users\1ap\source\repos\Snake\Snake\obj\Debug\net8.0-windows\Snake.Properties.Resources.resources
 C:\Users\1ap\source\repos\Snake\Snake\obj\Debug\net8.0-windows\Snake.Form2.resources
 C:\Users\1ap\source\repos\Snake\Snake\obj\Debug\net8.0-windows\Snake.Form3.resources
+C:\Users\ZS_Elektryk\Desktop\Snake-main\Snake\obj\Debug\net8.0-windows\Snake.dll
+C:\Users\ZS_Elektryk\Desktop\Snake-main\Snake\obj\Debug\net8.0-windows\refint\Snake.dll
+C:\Users\ZS_Elektryk\Desktop\Snake-main\Snake\obj\Debug\net8.0-windows\Snake.pdb
