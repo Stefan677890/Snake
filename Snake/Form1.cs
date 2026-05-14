@@ -20,13 +20,16 @@ namespace Snake
         }
         private void button1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("The game is starting");
-            Timer.Start();
+            Form2 form = new Form2();
+            form.Show();
+            this.Hide();
         }
 
         private void Difficulty_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Choose the difficulty");
+            Form3 form = new Form3();
+            form.Show();
+            this.Hide();
         }
 
         private void button3_Click(object sender, EventArgs e)

@@ -100,10 +100,10 @@
             Controls.Add(Difficulty);
             Controls.Add(Start);
             Icon = (Icon)resources.GetObject("$this.Icon");
-            MaximumSize = new Size(801, 601);
+            MaximumSize = new Size(801, 600);
             MinimumSize = new Size(800, 600);
             Name = "Board";
-            Text = "Board";
+            Text = "Menu";
             ResumeLayout(false);
         }
 

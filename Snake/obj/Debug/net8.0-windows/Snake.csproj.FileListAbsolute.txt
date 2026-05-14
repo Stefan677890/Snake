@@ -15,3 +15,5 @@ C:\Users\1ap\source\repos\Snake\Snake\obj\Debug\net8.0-windows\Snake.pdb
 C:\Users\1ap\source\repos\Snake\Snake\obj\Debug\net8.0-windows\Snake.genruntimeconfig.cache
 C:\Users\1ap\source\repos\Snake\Snake\obj\Debug\net8.0-windows\ref\Snake.dll
 C:\Users\1ap\source\repos\Snake\Snake\obj\Debug\net8.0-windows\Snake.Properties.Resources.resources
+C:\Users\1ap\source\repos\Snake\Snake\obj\Debug\net8.0-windows\Snake.Form2.resources
+C:\Users\1ap\source\repos\Snake\Snake\obj\Debug\net8.0-windows\Snake.Form3.resources
