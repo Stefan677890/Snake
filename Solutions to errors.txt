@@ -1,0 +1,1 @@
+First of all u need open cmd or powershell then find the directory and disable all security by command - "Get-ChildItem-Recurse | Unlock-File"
