@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Drawing;
+using System.Runtime.CompilerServices;
 using System.Windows.Forms;
 
 namespace Snake
@@ -9,36 +10,35 @@ namespace Snake
         public static int difficulty = 1;
         int PlayerScore = 0;
 
-        int PlayerX = 400;
-        int PlayerY = 400;
-
+        int PlayerX = 377;
+        int PlayerY = 304;
         int PlayerSpeed = 0;
 
         int AppleX;
         int AppleY;
-
         string direction = "right";
-
+        
         public Form2()
         {
             InitializeComponent();
 
             if (difficulty == 0)
             {
-                PlayerSpeed = 10;
+                PlayerSpeed = 4;
             }
             else if (difficulty == 1)
             {
-                PlayerSpeed = 12;
+                PlayerSpeed = 5;
             }
             else if (difficulty == 2)
             {
-                PlayerSpeed = 14;
+                PlayerSpeed = 6;
             }
             else if (difficulty == 3)
             {
-                PlayerSpeed = 18;
+                PlayerSpeed = 7;
             }
+
 
             this.DoubleBuffered = true;
         }
@@ -63,6 +63,27 @@ namespace Snake
             }
 
             this.Invalidate();
+
+            if (PlayerX > this.ClientSize.Width - 140)
+            {
+                PlayerX = 377;
+                PlayerY = 304;
+            }
+            if (PlayerX < 117)
+            {
+                PlayerX = 377;
+                PlayerY = 304;
+            }
+            if (PlayerY > this.ClientSize.Height - 50)
+            {
+                PlayerX = 377;
+                PlayerY = 304;
+            }
+            if (PlayerY < 108)
+            {
+                PlayerX = 377;
+                PlayerY = 304;
+            }
         }
 
         private void Form2_Paint(object sender, PaintEventArgs e)

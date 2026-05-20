@@ -36,7 +36,7 @@
             // Timer
             // 
             Timer.Enabled = true;
-            Timer.Interval = 75;
+            Timer.Interval = 10;
             Timer.Tick += Tick;
             // 
             // Form2
@@ -60,5 +60,6 @@
         #endregion
 
         private System.Windows.Forms.Timer Timer;
+        private Button button1;
     }
 }
