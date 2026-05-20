@@ -43,7 +43,7 @@ namespace Snake
 
         private void Secret_Click(object sender, EventArgs e)
         {
-            Form2.difficulty = 4;
+            Form2.difficulty = 0;
             Form2 gameForm = new Form2();
             gameForm.Show();
             this.Hide();
