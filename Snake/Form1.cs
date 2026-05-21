@@ -23,7 +23,7 @@ namespace Snake
 
         private void button3_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("The program is being close...");
+            MessageBox.Show("The program is being closed...");
             Close();
         }
     }

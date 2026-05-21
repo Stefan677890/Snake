@@ -17,7 +17,7 @@ namespace Snake
         int AppleX;
         int AppleY;
         string direction = "right";
-        
+
         public Form2()
         {
             InitializeComponent();
@@ -68,21 +68,33 @@ namespace Snake
             {
                 PlayerX = 377;
                 PlayerY = 304;
+                Timer.Stop();
+                try_again.Show();
+                Main_menu.Show();
             }
             if (PlayerX < 117)
             {
                 PlayerX = 377;
                 PlayerY = 304;
+                Timer.Stop();
+                try_again.Show();
+                Main_menu.Show();
             }
             if (PlayerY > this.ClientSize.Height - 50)
             {
                 PlayerX = 377;
                 PlayerY = 304;
+                Timer.Stop();
+                try_again.Show();
+                Main_menu.Show();
             }
             if (PlayerY < 108)
             {
                 PlayerX = 377;
                 PlayerY = 304;
+                Timer.Stop();
+                try_again.Show();
+                Main_menu.Show();
             }
         }
 
@@ -105,6 +117,20 @@ namespace Snake
         private void Form2_Load(object sender, EventArgs e)
         {
             Timer.Start();
+            try_again.Hide();
+            Main_menu.Hide();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Timer.Start();
+            try_again.Hide();
+            Main_menu.Hide();
         }
     }
 }
