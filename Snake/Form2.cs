@@ -13,11 +13,15 @@ namespace Snake
         int PlayerX = 377;
         int PlayerY = 304;
 
+        int SnakeSize = 20;
         
         double PlayerSpeed = 0;
 
         int AppleX;
         int AppleY;
+
+        List<Point> SnakeTail = new List<Point>();
+
 
         Random rand = new Random();
 
@@ -106,10 +110,23 @@ namespace Snake
                 try_again.Show();
                 Main_menu.Show();
             }
+            foreach(Point part in SnakeTail)
+            {
+                Rectangle SnakeTails = new Rectangle(part.X, part.Y , 20, 20);
+            }
+            if (appleRect.IntersectsWith (snakeRect))
+            {
+                PlayerScore += 1;
+            }
         }
 
         private void Form2_Paint(object sender, PaintEventArgs e)
         {
+            foreach (Point part in SnakeTail)
+            {
+                e.Graphics.FillRectangle(Brushes.Lime, part.X, part.Y, SnakeSize, SnakeSize);
+            }
+
             e.Graphics.FillRectangle(Brushes.Green, new Rectangle(PlayerX, PlayerY, 20, 20));
             e.Graphics.FillRectangle(Brushes.Red, new Rectangle(AppleX, AppleY, 20, 20));
         }
@@ -151,6 +168,7 @@ namespace Snake
             Timer.Start();
 
             this.Focus();
+            SpawnApple();
         }
 
         private void SpawnApple()
