@@ -24,7 +24,12 @@ namespace Snake
         private void button3_Click(object sender, EventArgs e)
         {
             MessageBox.Show("The program is being closed...");
-            Close();
+            Application.Exit();
+        }
+
+        private void Board_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

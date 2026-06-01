@@ -97,6 +97,7 @@
             MinimumSize = new Size(800, 600);
             Name = "Board";
             Text = "Menu";
+            Load += Board_Load;
             ResumeLayout(false);
         }
 
