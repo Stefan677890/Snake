@@ -7,7 +7,7 @@ namespace Snake
 {
     public partial class Form2 : Form
     {
-        public static int difficulty = 1;
+        public static double difficulty = 1;
         public static int HighScore = 0;
 
         int PlayerScore = 0;
@@ -226,8 +226,23 @@ namespace Snake
             direction = "right";
 
             PlayerScore = 0;
-
-            applesEaten = 0;
+			if (difficulty == 0)
+			{
+				PlayerSpeed = 2.0;
+			}
+			else if (difficulty == 1)
+			{
+				PlayerSpeed = 3.0;
+			}
+			else if (difficulty == 2)
+			{
+				PlayerSpeed = 4.0;
+			}
+			else if (difficulty == 3)
+			{
+				PlayerSpeed = 5.0;
+			}
+			applesEaten = 0;
             isGoldenAppleActive = false;
 
             SnakeTail.Clear();
