@@ -51,7 +51,7 @@ namespace Snake
 
 		private void MemeMode_Click(object sender, EventArgs e)
 		{
-			Form2.difficulty = 1;
+			Form2.difficulty = 5;
 			Form2 gameForm = new Form2();
 			gameForm.Show();
 			this.Hide();

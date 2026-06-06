@@ -33,7 +33,7 @@
 			Hard = new Button();
 			Extreme = new Button();
 			Secret = new Button();
-			MemeMode = new Button();
+			TestMode = new Button();
 			SuspendLayout();
 			// 
 			// Normal
@@ -100,19 +100,19 @@
 			Secret.UseVisualStyleBackColor = false;
 			Secret.Click += Secret_Click;
 			// 
-			// MemeMode
+			// TestMode
 			// 
-			MemeMode.BackColor = Color.Transparent;
-			MemeMode.Cursor = Cursors.Hand;
-			MemeMode.FlatStyle = FlatStyle.Flat;
-			MemeMode.ForeColor = Color.Transparent;
-			MemeMode.Location = new Point(148, 219);
-			MemeMode.Margin = new Padding(0);
-			MemeMode.Name = "MemeMode";
-			MemeMode.Size = new Size(10, 11);
-			MemeMode.TabIndex = 5;
-			MemeMode.UseVisualStyleBackColor = false;
-			MemeMode.Click += MemeMode_Click;
+			TestMode.BackColor = Color.Transparent;
+			TestMode.Cursor = Cursors.Hand;
+			TestMode.FlatStyle = FlatStyle.Flat;
+			TestMode.ForeColor = SystemColors.ControlText;
+			TestMode.Location = new Point(148, 219);
+			TestMode.Margin = new Padding(0);
+			TestMode.Name = "TestMode";
+			TestMode.Size = new Size(10, 11);
+			TestMode.TabIndex = 5;
+			TestMode.UseVisualStyleBackColor = false;
+			TestMode.Click += MemeMode_Click;
 			// 
 			// Form3
 			// 
@@ -121,7 +121,7 @@
 			BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
 			BackgroundImageLayout = ImageLayout.Stretch;
 			ClientSize = new Size(784, 561);
-			Controls.Add(MemeMode);
+			Controls.Add(TestMode);
 			Controls.Add(Secret);
 			Controls.Add(Extreme);
 			Controls.Add(Hard);
@@ -140,6 +140,6 @@
         private Button Hard;
         private Button Extreme;
         private Button Secret;
-		private Button MemeMode;
+		private Button TestMode;
 	}
 }

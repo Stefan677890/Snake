@@ -82,3 +82,4 @@ C:\Users\Lara\source\repos\Snake\Snake\obj\Debug\net8.0-windows\refint\Snake.dll
 C:\Users\Lara\source\repos\Snake\Snake\obj\Debug\net8.0-windows\Snake.pdb
 C:\Users\Lara\source\repos\Snake\Snake\obj\Debug\net8.0-windows\Snake.genruntimeconfig.cache
 C:\Users\Lara\source\repos\Snake\Snake\obj\Debug\net8.0-windows\ref\Snake.dll
+C:\Users\Lara\source\repos\Snake\Snake\bin\Debug\net8.0-windows\Snake.dll.config

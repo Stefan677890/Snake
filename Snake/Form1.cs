@@ -1,3 +1,7 @@
+using System.Media;
+using System.Numerics;
+using System.IO;
+
 namespace Snake
 {
     public partial class Board : Form
